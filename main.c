@@ -20,11 +20,11 @@ void	ft_exit(t_philo *philo)
 
 	i = 0;
 	pthread_mutex_destroy(&philo->info_ptr->write);
-	while (i < philo->info_ptr->n_philo)
-	{
-		pthread_mutex_destroy(&philo->info_ptr->fork[i]);
-		i++;
-	}
+//	while (i < philo->info_ptr->n_philo)
+//	{
+//		pthread_mutex_destroy(&philo->info_ptr->fork[i]);
+//		i++;
+//	}
 	free(philo->info_ptr->fork);
 	i = philo->info_ptr->n_philo;
 	while (i)

@@ -36,7 +36,7 @@ t_infos	*fill_info(int ac, char **av)
 	infos->tte = ft_atoi(av[3]);
 	infos->tts = ft_atoi(av[4]);
 	infos->die = 0;
-//	pthread_mutex_init(&infos->die, NULL);
+	pthread_mutex_init(&infos->m_die, NULL);
 	pthread_mutex_init(&infos->write, NULL);
 	infos->fork = malloc(sizeof(pthread_mutex_t) * infos->n_philo);
 	if (!infos->fork)

@@ -45,6 +45,7 @@ void	*ft_loop(t_philo *philo)
 {
 	if (philo->id == 1 && philo->next->id == 1)
 	{	
+		ft_write_philo(philo, "has taken a fork\n");
 		ft_sleep((philo->info_ptr->ttd), philo, 1);
 		ft_write_philo(philo, "died\n");
 		return ((void *)0);

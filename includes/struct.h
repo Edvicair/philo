@@ -23,7 +23,7 @@ typedef struct s_infos
 	int				max_eat;
 	int				die;
 	struct s_philo	*philo_ptr;
-//	pthread_mutex_t die;
+	pthread_mutex_t m_die;
 	pthread_mutex_t	write;
 	pthread_mutex_t	*fork;
 }					t_infos;

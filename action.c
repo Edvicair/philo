@@ -54,6 +54,12 @@ void	action(t_philo *philo, char *str)
 
 void	ft_dead(t_philo *philo)
 {
+	pthread_mutex_lock(&philo->info_ptr->m_die);
+	if (philo->info_ptr->n_philo == 1)
+	{
+		philo->info_ptr->die = philo->id;
+		pthread_mutex_unlock(&philo->info_ptr->m_die);
+	}
 	while (philo->info_ptr->die == 0)
 	{
 		if ((ft_time() - philo->time
@@ -61,6 +67,7 @@ void	ft_dead(t_philo *philo)
 		{
 			philo->info_ptr->die = philo->id;
 			ft_write_philo(philo, "died\n");
+			pthread_mutex_unlock(&philo->info_ptr->m_die);
 		}
 		philo = philo->next;
 	}
