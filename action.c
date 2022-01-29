@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   action.c                                           :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: edvicair <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/01/28 22:57:38 by edvicair          #+#    #+#             */
+/*   Updated: 2022/01/28 23:29:05 by edvicair         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "philo.h"
 
 void	ft_sleep(long time, t_philo *philo, int verif)
@@ -48,7 +60,7 @@ void	ft_dead(t_philo *philo)
 				- philo->last_meal >= philo->info_ptr->ttd))
 		{
 			philo->info_ptr->die = philo->id;
-              		ft_write_philo(philo, "died\n");
+			ft_write_philo(philo, "died\n");
 		}
 		philo = philo->next;
 	}

@@ -6,7 +6,7 @@
 /*   By: edvicair <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/18 18:03:00 by edvicair          #+#    #+#             */
-/*   Updated: 2022/01/18 19:52:14 by edvicair         ###   ########.fr       */
+/*   Updated: 2022/01/28 23:23:34 by edvicair         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,7 @@ typedef struct s_infos
 	int				max_eat;
 	int				die;
 	struct s_philo	*philo_ptr;
+//	pthread_mutex_t die;
 	pthread_mutex_t	write;
 	pthread_mutex_t	*fork;
 }					t_infos;

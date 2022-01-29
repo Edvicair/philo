@@ -18,7 +18,7 @@ INCLUDES_DIR = includes/
 
 VPATH	= $(INIT_DIR) $(LIBFT_DIR)
 
-FLAGS = -Wall -Wextra -Werror #-fsanitize=address
+FLAGS = -Wall -Wextra -Werror -fsanitize=thread
 
 THREAD_FLAGS = -lpthread -D_REENTRANT
 

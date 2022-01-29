@@ -5,13 +5,13 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: edvicair <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/01/18 19:58:16 by edvicair          #+#    #+#             */
-/*   Updated: 2022/01/18 19:58:31 by edvicair         ###   ########.fr       */
+/*   Created: 2022/01/28 23:11:36 by edvicair          #+#    #+#             */
+/*   Updated: 2022/01/28 23:12:34 by edvicair         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FT_PHILO_H
-# define FT_PHILO_H
+#ifndef PHILO_H
+# define PHILO_H
 
 # include <unistd.h>
 # include <stdlib.h>
@@ -20,9 +20,7 @@
 # include <sys/time.h>
 # include "struct.h"
 
-
 int		ft_max_eat(t_philo *philo);
-
 void	ft_join(t_philo *philo);
 void	ft_dead(t_philo *philo);
 void	*ft_loop(t_philo *philo);

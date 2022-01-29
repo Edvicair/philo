@@ -6,7 +6,7 @@
 /*   By: edvicair <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/18 15:42:54 by edvicair          #+#    #+#             */
-/*   Updated: 2022/01/18 20:08:20 by edvicair         ###   ########.fr       */
+/*   Updated: 2022/01/28 23:00:28 by edvicair         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,5 +51,5 @@ int	main(int ac, char **av)
 	ft_join(philo);
 	ft_exit(philo);
 	free(infos);
-	return (0);	
+	return (0);
 }	
